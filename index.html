@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135048-10"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-135048-10');
+        </script>
+    </head>
+    <body>
+        <div id="joke">In Soviet Russia, joke makes you.</div>
+
+        <script>
+            const data = [
+                "Why did the white bear dissolve in water? Because it was polar.",
+                "Why does hamburger yield lower energy than steak? Because it is in the ground state.",
+                "What do you do with a dead chemist? Barium."
+            ];
+
+            // Grab a joke at random and insert into page.
+            const joke = data[Math.floor(Math.random() * data.length)];
+            document.getElementById('joke').innerHTML = joke;
+        </script>
+    </body>
+</html>
